@@ -7,11 +7,17 @@ height:100vh;
     background-color: #b63e0e;
     position: relative;
     top:70px;
+    scroll-snap-type: y mandatory;
+    scrollbar-width:none ;//only  works for firefox
+    &::-webkit-scrollbar{
+        display:none;  //for other browsers
+    }
     
 
     > *{
         width:100%;
         height:calc(100vh - 70px);
+        scroll-snap-align: start;
     }
 }
 
