@@ -10,9 +10,18 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className='wrapper'>
+           <h2>Hi There, I'm</h2>
+           <h1>Cynthia Agu</h1>
+           <h3>Freelance  <span></span></h3>
 
         </div>
-      </div>
+     <a href="#portfolio">
+     
+     <img src='../Assets/arrow-down-removebg-preview.png' alt=""/>
+
+     </a>
+
+        </div>
 
 
     </div>
