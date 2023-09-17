@@ -8,7 +8,7 @@ export default function Intro() {
   const element = useRef()
 
   useEffect(()=>{
-    init(myElement, { showCursor: false, strings: ['Use with React.js!', 'Yeah!' ] })
+    init(element.current, { showCursor: false, strings: ['Designer','Developer', 'Content Creator', 'UIUX Designer' ] })
 
   
   },[])
@@ -23,7 +23,7 @@ export default function Intro() {
         <div className='wrapper'>
            <h2>Hi There, I'm</h2>
            <h1>Cynthia Agu</h1>
-           <h3>Freelance   <span ref={useRef}>Designer</span></h3>
+           <h3>Freelance   <span ref={element}></span></h3>
 
         </div>
      <a href="#portfolio">
