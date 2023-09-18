@@ -8,9 +8,11 @@ export default function Intro() {
   const element = useRef()
 
   useEffect(()=>{
-    init(element.current, { showCursor: false, strings: ['Designer','Developer', 'Content Creator', 'UIUX Designer' ] })
-
-  
+    init(element.current, {
+      showCursor: true,
+      backDelay: 1500,
+      backSpeed:  60,
+       strings: ['Designer' ], });
   },[])
   return (
     <div className='intro' id='intro'>
