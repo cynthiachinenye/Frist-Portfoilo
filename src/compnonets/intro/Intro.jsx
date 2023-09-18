@@ -12,7 +12,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:  60,
-       strings: ['Designer' ], });
+       strings: ['Designer', 'Developer', 'UIUX Designer', 'Content Creator'], });
   },[])
   return (
     <div className='intro' id='intro'>
