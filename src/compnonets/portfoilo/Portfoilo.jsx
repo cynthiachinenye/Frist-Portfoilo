@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './portfoilo.scss'
 import PortfolioList from '../portfoliolist/PortfolioList'
-
+import {featuredPortfolio,webPortfolio,mobilePortfolio,designPortfolio,brandingPortfolio}from '../../data'
 
 
 export default function Portfoilo() {

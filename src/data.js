@@ -157,7 +157,7 @@ export const  designPortfolio = [
 ];
 
 
-export const  mobilePortfolio = [
+export const  brandingPortfolio = [
     {
         id: 1,
         title:'Mobile App',
