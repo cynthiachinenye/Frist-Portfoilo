@@ -5,6 +5,21 @@
     justify-content: center;
     position: relative;
 
+    .arrow{
+       height:50px;
+       position: absolute; 
+      
+
+       &.left{
+        left:100px;
+       }
+       &.right{
+        right:100px;
+        transform: rotate(-180deg);
+       }
+
+    }
+
     .slider{
         height:350px;
         display:flex;

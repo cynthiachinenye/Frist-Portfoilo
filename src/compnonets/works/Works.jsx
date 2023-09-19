@@ -1,6 +1,8 @@
 import './work.scss'
 
 export default function Works() {
+
+
   return (
     <div className='works' id='works'>
       <div className='slider'>
@@ -29,6 +31,8 @@ export default function Works() {
           </div>
         </div>
       </div>
+      <img src='Assets/arrows2.png' alt='' className='arrow left'/>
+      <img src='Assets/arrows2.png' alt='' className='arrow right'/>
 
     </div>
   )
