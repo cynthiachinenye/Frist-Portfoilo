@@ -157,40 +157,40 @@ export const  designPortfolio = [
 ];
 
 
-export const  brandingPortfolio = [
+export const  contentPortfolio = [
     {
         id: 1,
-        title:'Mobile App',
+        title:'Content App',
         img:'https://cdn.dribbble.com/userupload/7394556/file/original-e3054c15427f309a1bb3f1dca10c7a75.png?resize=640x480&vertical=center',
     },
 
     {
         id: 2,
-        title:'Mobile App',
+        title:'Content App',
         img:  'https://cdn.dribbble.com/userupload/5863842/file/original-562443dc06c934997f757981e44b69f9.png?resize=640x480&vertical=center',
     },
 
     {
         id: 3,
-        title:'Mobile App',
+        title:'Content App',
         img:  'https://cdn.dribbble.com/users/110372/screenshots/3898209/media/7974f645a549330726cdc1630e5f73d3.gif',
     },
 
     {
         id: 4,
-        title:'Mobile App',
+        title:'Content App',
         img:  'https://cdn.dribbble.com/users/194964/screenshots/11666447/hrki_mobile.png?resize=450x338&vertical=center',
     },
 
     {
         id: 5,
-        title:'Mobile App',
+        title:'Content App',
         img:  'https://cdn.dribbble.com/users/418188/screenshots/15980950/habit_builder_app_tubik_design.png?resize=450x338&vertical=center',
     },
 
     {
         id: 6,
-        title:'Mobile App',
+        title:'Content App',
         img:  'https://cdn.dribbble.com/userupload/6016169/file/original-109f1b0483c617513c75e004b05f5bb8.png?resize=450x338&vertical=center',
     },
 ];

@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './portfoilo.scss'
 import PortfolioList from '../portfoliolist/PortfolioList'
-import {featuredPortfolio,webPortfolio,mobilePortfolio,designPortfolio,brandingPortfolio}from '../../data'
+import {featuredPortfolio,webPortfolio,mobilePortfolio,designPortfolio,contentPortfolio}from '../../data'
 
 
 export default function Portfoilo() {
@@ -27,18 +27,47 @@ export default function Portfoilo() {
 
     {
       id: 'designing',
-      title: 'Designing',
+      title: 'Design',
     },
 
     {
-      id: 'brand',
-      title: 'Branding',
+      id: 'content',
+      title: 'content',
     }
 
-
-
-
   ]
+
+ useEffect(()=>{
+  switch (list) {
+    case 'featured':
+      setDate(featuredPortfolio);
+      break;
+
+      case 'web':
+      setDate(webPortfolio);
+      break;
+
+      case 'mobile':
+      setDate(mobilePortfolio);
+      break;
+
+      case 'design':
+      setDate(designPortfolio);
+      break;
+
+      case 'content':
+      setDate(contentPortfolio);
+      break;
+
+    default:
+
+      setDate(featuredPortfolio);
+    
+      break;
+  }
+
+ },[list])
+
   return (
     <div className='portfolio' id='portfolio'>
       <h1>
@@ -57,38 +86,21 @@ export default function Portfoilo() {
         ))
       }
       </ul>
-
+           
       <div className='container'>
-        <div className="item">
-          <img src="https://cdn.pixabay.com/photo/2021/01/11/10/20/circuit-board-5907811_1280.jpg" alt='' />
-          <h3>Work Space</h3>
-        </div>
+      {
+        data.map((d)=>(
 
-        <div className="item">
-          <img src="Assets/set.png" alt='' />
-          <h3>Work Space</h3>
+          <div className="item">
+          <img src={d.img} alt='' />
+          <h3>{d.title}</h3>
         </div>
+          
+        ))
+      }
+       
 
-        <div className="item">
-          <img src="Assets/rev.jpg" alt='' />
-          <h3>Work Space</h3>
-        </div>
-
-        <div className="item">
-          <img src="Assets/rev.jpg" alt='' />
-          <h3>Work Space</h3>
-        </div>
-
-        <div className="item">
-          <img src="https://cdn.dribbble.com/users/428659/screenshots/3804768/dribbblecover.jpg?resize=800x600&vertical=center" alt='' />
-          <h3>Work Space</h3>
-        </div>
-
-        <div className="item">
-          <img src="Assets/rev.jpg" alt='' />
-          <h3>Work Space</h3>
-        </div>
-
+        
       </div>
 
     </div>
