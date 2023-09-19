@@ -60,7 +60,7 @@ export default function Portfoilo() {
 
       <div className='container'>
         <div className="item">
-          <img src="https://pixabay.com/illustrations/circuit-board-pattern-background-5907811/" alt='' />
+          <img src="https://cdn.pixabay.com/photo/2021/01/11/10/20/circuit-board-5907811_1280.jpg" alt='' />
           <h3>Work Space</h3>
         </div>
 
@@ -80,7 +80,7 @@ export default function Portfoilo() {
         </div>
 
         <div className="item">
-          <img src="Assets/rev.jpg" alt='' />
+          <img src="https://cdn.dribbble.com/users/428659/screenshots/3804768/dribbblecover.jpg?resize=800x600&vertical=center" alt='' />
           <h3>Work Space</h3>
         </div>
 
