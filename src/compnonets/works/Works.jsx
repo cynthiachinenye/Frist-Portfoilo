@@ -9,19 +9,23 @@ export default function Works() {
             <div className='left'>
               <div className='leftContainer'>
                 <div className='imgContainer'>
-                  <img src='Assest/phone.png' />
-                  <h2>Title</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vitae mi diam. Vestibulum ante ipsum primis in faucibus
-                    orci luctus et ultrices posuere cubilia curae;
-                    Sed consectetur eu nibh in fermentum.
-                    Mauris luctus pulvinar leo malesuada tristique.
-                    Proin sed varius erat.
-                    Cras condimentum mauris id augue congue fringilla.</p>
+                  <img src='Assets/phone2.png' alt='' />
+                  
                 </div>
+                <h2>Title</h2>
+                  <p>Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit.
+                    Nunc vitae mi diam. 
+                    Vestibulum ante ipsum primis
+                  
+                  
+                    </p>
+                    <span>Projects</span>
               </div>
             </div>
-            <div className='right'></div>
+            <div className='right'>
+               <img src='https://cdn.dribbble.com/userupload/5871349/file/original-5fe8fb23cbecadf2fe8f5410627b0bda.jpg?resize=400x300&vertical=center'/>
+            </div>
           </div>
         </div>
       </div>
