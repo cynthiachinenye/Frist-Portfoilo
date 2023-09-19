@@ -6,6 +6,7 @@ import PortfolioList from '../portfoliolist/PortfolioList'
 
 export default function Portfoilo() {
   const [list, setList] = useState('featured')
+  const [data, setDate] = useState([])
 
   const listItem = [
     {

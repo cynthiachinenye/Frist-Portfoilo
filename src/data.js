@@ -10,7 +10,7 @@ export const  portfolioData = [
     {
         id: 2,
         title:'Social Media App',
-        img:  'https://www.istockphoto.com/vector/business-reporting-dashboard-concept-illustration-gm1428470293-471951872',
+        img:  'https://dribbble.com/shots/19501199-Wellbeing-and-Gamification-app-Home',
     },
 
     {
