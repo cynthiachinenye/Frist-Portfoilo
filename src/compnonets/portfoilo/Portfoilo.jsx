@@ -26,7 +26,7 @@ export default function Portfoilo() {
     },
 
     {
-      id: 'designing',
+      id: 'design',
       title: 'Design',
     },
 
