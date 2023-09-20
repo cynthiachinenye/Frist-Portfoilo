@@ -8,8 +8,8 @@ function Testimonial() {
      <div className='card'>
        <div className='top'>
          <img src='Assets/arrow-key.png' className='left' alt=''/>
-         <img src='https://cdn.dribbble.com/users/194964/screenshots/11666447/hrki_mobile.png?resize=450x338&vertical=center' alt=''/>
-         <img src='Assets/youtube.png' alt=''/>
+         <img  className='user' src='https://images.pexels.com/photos/18125671/pexels-photo-18125671/free-photo-of-sexy-woman-posing-in-dark.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt=''/>
+         <img className='right' src='Assets/youtube.png' alt=''/>
        </div>
        <div className='center'>
        Lorem ipsum dolor sit amet consectetur adipiscing elit Nunc vitae mi diam Vestibulum ante ipsum primis
