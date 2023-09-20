@@ -1,24 +1,32 @@
 import './work.scss'
+import {dataSlide} from '../../Slides'
+import { useState } from 'react'
+
 
 export default function Works() {
+  const [slide,setSlide] = useState([])
 
-
+ const handleClick =(next)=>{
+   
+   next === "left" ? setSlide (slide > 0 ? slide -1 :2) : 
+   setSlide(slide< dataSlide.length-1 ? slide + 1: 0)
+ }
   return (
     <div className='works' id='works'>
-      <div className='slider'>
+      <div className='slider' style={{transform:`translate(-${slide * 100}vw)`}}>
+      {
+        dataSlide.map((d)=>(
+       
         <div className='container'>
-          <div className='item'>
+      <div className='item'>
             <div className='left'>
               <div className='leftContainer'>
                 <div className='imgContainer'>
-                  <img src='Assets/phone2.png' alt='' />
+                  <img src={d.icon}alt='' />
                   
                 </div>
-                <h2>Title</h2>
-                  <p>Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit.
-                    Nunc vitae mi diam. 
-                    Vestibulum ante ipsum primis
+                <h2>{d.title}</h2>
+                  <p>{d.desc}
                   
                   
                     </p>
@@ -26,13 +34,16 @@ export default function Works() {
               </div>
             </div>
             <div className='right'>
-               <img src='https://cdn.dribbble.com/userupload/5871349/file/original-5fe8fb23cbecadf2fe8f5410627b0bda.jpg?resize=400x300&vertical=center'/>
+               <img src={d.img}/>
             </div>
           </div>
         </div>
+        ))
+      }
       </div>
-      <img src='Assets/arrows2.png' alt='' className='arrow left'/>
-      <img src='Assets/arrows2.png' alt='' className='arrow right'/>
+      
+      <img src='Assets/arrows2.png' alt='' className='arrow left' onClick={()=>handleClick('left')}/>
+      <img src='Assets/arrows2.png' alt='' className='arrow right' onClick={()=>handleClick('')}/>
 
     </div>
   )
