@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div className="contact" id="contact">
     <div className='left'>
-     <img src='Assets/contact.png' alt=''/>
+     <img src='Assets/contact2.png' alt=''/>
     </div>
     <div className='right'>
     <h2>Contact</h2>

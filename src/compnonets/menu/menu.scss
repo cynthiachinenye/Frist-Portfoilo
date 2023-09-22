@@ -31,6 +31,10 @@
         li{
             margin-bottom:25px;
             font-size:25px;
+            @include mobile{
+                // 8px;font-size:1
+                margin:10px;
+            }
             a{
                 color:inherit;
                 text-decoration: none;
