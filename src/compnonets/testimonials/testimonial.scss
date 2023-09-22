@@ -1,13 +1,35 @@
+ @import '../../global.scss';
+ 
+ 
 .test{
     background-color:#fff;
     display:flex;
     flex-direction:column;
     align-items: center;
+    
+    @include mobile{
+        justify-content: space-evenly;
+        margin: 5px;
+    }
+    
 
+    h1{
+        font-size: 50px;
+        
+    @include mobile{
+       font-size: 20px;
+    }
+    }
 
 
     h3{
         font-size: 20px;
+        
+    @include mobile{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin:10px 0px;
+    }
 
     }
     .container{
@@ -17,6 +39,10 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+          
+
+       
+        
 
 
         .card{
@@ -29,14 +55,27 @@
             justify-content: space-around;
             padding:20px;
             transition: all 1s ease;
+            
+    @include mobile{
+       height:180px;
+    }
 
             &.featured{
                 width:300px;
                 height:75%;
                 margin:0 30px;
+
+                
+    @include mobile{
+        height:180px;
+        width:250px;
+        margin:1px;
+    }
             }
             &:hover{
                 transform: scale(1.1);
+
+                // 
             }
 
             .top{
@@ -55,6 +94,11 @@
                             border-radius:50%;
                             object-fit: cover;
                             margin:0 30px;
+                            
+    @include mobile{
+        width:40px;
+        height:40px;
+    }
                         }
                 }
             }
@@ -62,6 +106,11 @@
                 padding:10px;
                 border-radius:10px;
                 background-color: rgb(249, 237, 240);
+                
+    @include mobile{
+       padding:5px;
+       font-size:12px;
+    }
 
             }
             .bottom{
@@ -72,9 +121,17 @@
 
                 h3{
                     margin-bottom:5px;
+                    
+    @include mobile{
+        font-size:14px;
+    }
                 }
                 h4{
                     color:gray;
+                    
+    @include mobile{
+        font-size:13px;
+    }
                 }
             }
         }

@@ -22,11 +22,14 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
+      @include mobile{
+        align-items:flex-start;
+      }
 
       img {
         height: 90%;
         @include mobile{
-          flex-direction:column;
+          height:50%;
        }
   
       }
@@ -44,16 +47,30 @@
       height: 100%;
       padding-left: 50px;
       justify-content: center;
+      
+      @include mobile{
+        padding-left:0;
+        align-items: center;
+      }
 
       h1 {
         font-size: 60px;
         margin: 10px 0px;
+        @include mobile{
+          font-size:40px;
+          margin:0;
+        
+        }
       }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
+
+        @include mobile{
+          font-size:20px;
+        }
 
         span{
             font-size:inherit;
