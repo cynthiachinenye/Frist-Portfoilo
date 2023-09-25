@@ -22,7 +22,7 @@ export default function Works() {
             <div className='left'>
               <div className='leftContainer'>
                 <div className='imgContainer'>
-                  <img src={d.icon}alt='' />
+                  <img src={d.icon} alt='' />
                   
                 </div>
                 <h2>{d.title}</h2>

@@ -6,7 +6,7 @@ import {featuredPortfolio,webPortfolio,mobilePortfolio,designPortfolio,contentPo
 
 export default function Portfoilo() {
   const [list, setList] = useState('featured')
-  const [data, setDate] = useState([])
+  const [data, setData] = useState([])
 
   const listItem = [
     {
@@ -40,28 +40,28 @@ export default function Portfoilo() {
  useEffect(()=>{
   switch (list) {
     case 'featured':
-      setDate(featuredPortfolio);
+      setData(featuredPortfolio);
       break;
 
       case 'web':
-      setDate(webPortfolio);
+      setData(webPortfolio);
       break;
 
       case 'mobile':
-      setDate(mobilePortfolio);
+      setData(mobilePortfolio);
       break;
 
       case 'design':
-      setDate(designPortfolio);
+      setData(designPortfolio);
       break;
 
       case 'content':
-      setDate(contentPortfolio);
+      setData(contentPortfolio);
       break;
 
     default:
 
-      setDate(featuredPortfolio);
+      setData(featuredPortfolio);
     
       break;
   }
